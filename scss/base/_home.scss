@@ -14,9 +14,15 @@ body {
 
 /* Header */
 header {
-    height: 40vh;
-    @include flex;
-    background-color: $color-header;
+    .logo {
+        img {
+            height: 18vh;
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+    }
 }
 
 
@@ -37,13 +43,7 @@ header {
     background-color: $color-principal;
 }
 
-.logo {
-    img {
-        margin: 5rem;
-        height: 25vh;
-    }
 
-}
 
 main {
     div {
@@ -60,11 +60,11 @@ main {
 /* Configuración de la sección "index" */
 .index {
     height: 70vh;
-    margin: 1.8rem 1.8rem;
+    margin: 2rem 1.8rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 20%);
-    row-gap: 2rem;
+    row-gap: 3rem;
     align-content: center;
 }
 
@@ -122,9 +122,9 @@ h3 {
 
 /* Configuración de la sección "ubicación" */
 .mapa {
-    width: 70vh;
+    width: 80%;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     margin: 1rem 2.5rem;
     box-shadow: 10px 10px 20px rgba(0.4, 0.4, 0.4, 0.4);
 }
@@ -134,7 +134,7 @@ main {
 
         h1 {
             font-family: "Roboto", sans-serif;
-            font-weight: 700;
+            font-weight: 500;
             font-style: italic;
             text-align: center;
             color: $color-textos;
@@ -142,7 +142,7 @@ main {
 
         h2 {
             font-family: "Roboto", sans-serif;
-            font-weight: 700;
+            font-weight: 500;
             font-style: italic;
             text-align: center;
             color: $color-textos;
@@ -195,12 +195,29 @@ footer {
     font-style: italic;
     text-align: center;
     justify-items: center;
-    margin: 2rem;
+    background-color: black;
+    color: whitesmoke;
+    padding: 2rem;
 }
 
 
 /* Estilos para pantallas de escritorio */
 @media screen and (min-width: 1024px) {
+/* Adapracion del header y logo */
+
+    header {
+        .logo {
+            img {
+                height: 68vh;
+                margin-top: 1rem;
+                display: grid;
+
+
+            }
+        }
+    }
+
+
 
     /* Adaptación a pantallas de escritorio para la sección "carta" */
     .n-plato {
@@ -216,11 +233,10 @@ footer {
 
         }
     }
-
-
+  
     /* Adaptación a pantallas de escritorio para la sección "ubicación" */
     .mapa {
-        margin: 2rem 20rem;
+        margin: 2rem 15rem;
         width: 60%;
         box-shadow: 10px 10px 20px rgba(0.4, 0.4, 0.4, 0.4);
     }
