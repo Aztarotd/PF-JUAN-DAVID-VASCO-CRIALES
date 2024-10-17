@@ -76,35 +76,6 @@ main {
 }
 
 /* Configuración de la sección "carta" (menú) */
-.carta {
-    height: 70vh;
-    margin: 1rem 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 17%);
-    row-gap: 2.5rem;
-    align-content: center;
-}
-
-.carta {
-    img {
-        border-bottom: 5px solid black;
-        object-fit: cover;
-    }
-
-}
-
-.carta {
-    h2 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: italic;
-        color: $color-textos;
-        text-align: center;
-    }
-
-}
-
 .lista {
     h2 {
 
@@ -121,15 +92,10 @@ main {
 
     h2:hover {
         border: 2px solid black;
-        /* Color del borde */
         border-radius: 10px;
-        /* Esquinas redondeadas */
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-        /* Sombra */
         transition: all 0.3s ease-in-out;
-        /* Transición */
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-        /* Sombra al hacer hover */
         background-color: black;
     }
 }
@@ -275,5 +241,5 @@ footer {
         column-gap: 20rem;
         margin: 1rem 20rem;
     }
-    
+
 }
