@@ -21,20 +21,21 @@ header {
 
 
 
-.amarillo-bg{
-    background-color: $color-principal;
-}
-.offcanvas-header{
+.amarillo-bg {
     background-color: $color-principal;
 }
 
-.offcanvas-body{
-    background-color: $color-principal;
-}
-.dropdown-menu{
+.offcanvas-header {
     background-color: $color-principal;
 }
 
+.offcanvas-body {
+    background-color: $color-principal;
+}
+
+.dropdown-menu {
+    background-color: $color-principal;
+}
 
 .logo {
     img {
@@ -87,7 +88,7 @@ main {
 
 .carta {
     img {
-        border-bottom:5px solid black;
+        border-bottom: 5px solid black;
         object-fit: cover;
     }
 
@@ -104,12 +105,62 @@ main {
 
 }
 
+.lista {
+    h2 {
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        color: whitesmoke;
+        text-align: center;
+        margin: 1rem;
+        background-color: #592E0B;
+
+
+    }
+
+    h2:hover {
+        border: 2px solid black;
+        /* Color del borde */
+        border-radius: 10px;
+        /* Esquinas redondeadas */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        /* Sombra */
+        transition: all 0.3s ease-in-out;
+        /* Transición */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+        /* Sombra al hacer hover */
+        background-color: black;
+    }
+}
+
+.n-plato {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: black;
+    text-align: start;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    text-align: justify;
+}
+
+
+
 /* Configuración de la sección "ubicación" */
 .mapa {
     width: 70vh;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 1rem 0.1rem;
+    margin: 1rem 3rem;
+    box-shadow: 10px 10px 20px rgba(0.4, 0.4, 0.4, 0.4);
 }
 
 main {
@@ -157,7 +208,7 @@ main {
 .redes {
     img {
         object-fit: contain;
-        
+
     }
 
 }
@@ -186,16 +237,26 @@ footer {
 @media screen and (min-width: 1024px) {
 
     /* Adaptación a pantallas de escritorio para la sección "carta" */
-    .carta {
-        grid-template-columns: 1fr repeat(3, 1fr);
-        grid-template-rows: 0.5fr;
-        column-gap: 1rem;
+    .n-plato {
+        text-align: center;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
     }
+
+    .lista {
+
+        h3 {
+            text-align: justify;
+            border-style: solid;
+
+        }
+    }
+
 
     /* Adaptación a pantallas de escritorio para la sección "ubicación" */
     .mapa {
-        margin: 2rem 9rem;
+        margin: 2rem 20rem;
         width: 60%;
+        box-shadow: 10px 10px 20px rgba(0.4, 0.4, 0.4, 0.4);
     }
 
     /* Adaptación a pantallas de escritorio para la sección "galeria" */
@@ -203,6 +264,7 @@ footer {
         grid-template-columns: 1fr repeat(2, 1fr);
         grid-template-rows: 0.5fr;
         column-gap: 1rem;
+        box-shadow: 10px 10px 20px rgba(0.4, 0.4, 0.4, 0.4);
     }
 
     /* Adaptación a pantallas de escritorio para la sección "contacto" */
@@ -211,6 +273,7 @@ footer {
         grid-template-columns: 1fr repeat(2, 1fr);
         grid-template-rows: 1fr;
         column-gap: 20rem;
-        margin: 1rem 32rem;
+        margin: 1rem 20rem;
     }
+    
 }
