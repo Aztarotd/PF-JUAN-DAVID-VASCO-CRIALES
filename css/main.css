@@ -152,9 +152,7 @@ footer {
   font-style: italic;
   text-align: center;
   justify-items: center;
-  background-color: black;
-  color: whitesmoke;
-  padding: 2rem;
+  color: #000;
 }
 
 /* Estilos para pantallas de escritorio */
